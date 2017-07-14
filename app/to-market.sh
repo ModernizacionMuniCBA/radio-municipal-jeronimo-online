@@ -61,6 +61,8 @@ echo "Firmando ando"
 echo " ******************************** "
 
 
-${MYSDKPATH}/build-tools/24.0.3/apksigner sign --ks ${APPNAME}.keystore \
+${MYSDKPATH}/build-tools/24.0.3/apksigner sign \
+    --ks ${APPNAME}.keystore \
+    --ks-pass env:MKEY \
     --out platforms/android/build/outputs/apk/${APPNAME}-singned.apk \
     platforms/android/build/outputs/apk/android-release-unsigned-aligned.apk
