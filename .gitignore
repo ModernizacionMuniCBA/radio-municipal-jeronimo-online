@@ -1,0 +1,7 @@
+*.keystore
+compiler-cfg.sh
+*.apk
+*.zip
+app/platforms/android/
+app/plugins/android.json
+
