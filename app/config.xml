@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="ar.gob.gobiernoabierto.jeronimo" version="0.1.109" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="ar.gob.gobiernoabierto.jeronimo" version="0.3.121" xmlns="http://www.w3.org/ns/widgets" 
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
     <name>Radio Jerónimo</name>
     <description>
         Escuchar Radio Jerónimo
@@ -17,10 +19,10 @@
     <allow-intent href="geo:*" />
 
     <platform name="android">    
-        <icon src="/www/res/icon.png" density="ldpi" qualifier="ldpi" />
-        <icon src="/www/res/icon.png" density="mdpi" qualifier="mdpi" />
-        <icon src="/www/res/icon.png" density="hdpi" qualifier="hdpi" />
-        <icon src="/www/res/icon.png" density="xhdpi" qualifier="xhdpi" />
+        <icon src="www/res/icon.png" density="ldpi" qualifier="ldpi" />
+        <icon src="www/res/icon.png" density="mdpi" qualifier="mdpi" />
+        <icon src="www/res/icon.png" density="hdpi" qualifier="hdpi" />
+        <icon src="www/res/icon.png" density="xhdpi" qualifier="xhdpi" />
 
         <splash src="www/res/splash.png" density="land-ldpi" qualifier="land-ldpi" />
         <splash src="www/res/splash.png" density="land-mdpi" qualifier="land-mdpi" />

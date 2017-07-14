@@ -42,15 +42,12 @@ echo " ******************************** "
 
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ${APPNAME}.keystore platforms/android/build/outputs/apk/android-release-unsigned.apk ${APPNAME} <<< $MKEY
 
-echo " ******************************** "
-echo "Limpiando APK anterior"
-echo " ******************************** "
-# borrar el anterior comppilado
-rm platforms/android/build/outputs/apk/${APPNAME}-release.apk
 
 echo " ******************************** "
 echo "Alineado y balanceado"
 echo " ******************************** "
+
+rm platforms/android/build/outputs/apk/android-release-unsigned-aligned.apk
 
 ${MYSDKPATH}/build-tools/24.0.3/zipalign -v -p 4 \
   platforms/android/build/outputs/apk/android-release-unsigned.apk \
@@ -59,6 +56,9 @@ ${MYSDKPATH}/build-tools/24.0.3/zipalign -v -p 4 \
 echo " ******************************** "
 echo "Firmando ando"
 echo " ******************************** "
+
+# borrar el anterior comppilado
+rm platforms/android/build/outputs/apk/${APPNAME}-singned.apk
 
 
 ${MYSDKPATH}/build-tools/24.0.3/apksigner sign \
