@@ -2,4 +2,4 @@
 
 Stream de la Radio municipal Jerónimo online
 
-![icon](app/www/res/icon.png)
+![icon](app/www/res/screen.png)
