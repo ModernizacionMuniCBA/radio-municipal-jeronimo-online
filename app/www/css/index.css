@@ -50,6 +50,8 @@ body {
     padding: 5px 20px;
     border: 1px solid black;
     color: #000;
+    display: inline-block;
+    margin: 5px;
 }
 
 #btnReloadPlayer:hover,
